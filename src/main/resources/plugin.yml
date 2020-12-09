@@ -1,0 +1,4 @@
+name: ChargedBedrock
+version: ${project.version}
+main: net.mov51.ChargedBedrock
+api-version: 1.16
