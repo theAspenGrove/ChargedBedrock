@@ -9,6 +9,8 @@ import org.bukkit.event.EventPriority;
 import org.bukkit.event.Listener;
 import org.bukkit.event.entity.EntityExplodeEvent;
 
+import static net.mov51.helpers.fallingHelper.creepers;
+
 public class ExplosionHandler implements Listener {
 
     //Register Event Handler
@@ -32,7 +34,9 @@ public class ExplosionHandler implements Listener {
                 }else{
                     System.out.println("No Bedrock here");
                 }
+
             }
+            creepers.remove(e.getUniqueId());
         }
     }
 }
